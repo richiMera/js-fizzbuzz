@@ -2,19 +2,19 @@
 // ma per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 var listaNumeri = [];
-
-for (i = 1; i < 102; i++) {
-  listaNumeri.push(i);
+var numero = 0;
+for (i = 0; i < 101; i++) {
+  var numeroPush = numero + i;
+  listaNumeri.push(numeroPush);
   console.log(listaNumeri);
-  if (i % 3 == 0 && i % 5 == 0) {
-    listaNumeri[i] = "FizzBuzz";
-} else if (i % 5 == 0) {
-  listaNumeri[i] = "Buzz";
-} else if (i % 3 == 0 ) {
-listaNumeri[i] = "Fizz";
+  if (numeroPush % 3 == 0 && numeroPush % 5 == 0) {
+    listaNumeri[numeroPush] = "FizzBuzz";
+  } else if (numeroPush % 5 == 0) {
+  listaNumeri[numeroPush] = "Buzz";
+} else if (numeroPush % 3 == 0 ) {
+listaNumeri[numeroPush] = "Fizz";
 console.log(listaNumeri);
+  }
 }
+listaNumeri.shift();
 console.log(listaNumeri);
-
-
-}
