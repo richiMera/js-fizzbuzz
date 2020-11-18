@@ -7,11 +7,11 @@ for (i = 1; i < 101; i++) {
   if (i % 3 == 0 && i % 5 == 0) {
     numero = "FizzBuzz";
   } else if (i % 5 == 0) {
-  numero = "Buzz";
+    numero = "Buzz";
   } else if (i % 3 == 0 ) {
     numero = "Fizz";
   } else {
     numero = i;
   }
-  document.getElementById('buzzer').innerHTML += numero + "<br>";
+  document.getElementById('buzzer').innerHTML += "<li>" + numero + "</li>";
 }
